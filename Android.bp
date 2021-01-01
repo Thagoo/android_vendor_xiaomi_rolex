@@ -143,14 +143,11 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/vendor.qti.hardware.fm@1.0.so"],
-		},
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so"],
 		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
 	system_ext_specific: true,
@@ -223,14 +220,13 @@ android_app_import {
 }
 
 android_app_import {
-	name: "dpmserviceapp",
+	name: "imssettings",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	privileged: true,
 	system_ext_specific: true,
 }
 
