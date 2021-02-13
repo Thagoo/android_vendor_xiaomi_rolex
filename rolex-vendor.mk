@@ -2590,6 +2590,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rolex/proprietary/vendor/res/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_scale.png
 
 PRODUCT_PACKAGES += \
+    libaudioparsers \
     libqmiservices \
     libsdm-disp-vndapis \
     libthermalclient \
